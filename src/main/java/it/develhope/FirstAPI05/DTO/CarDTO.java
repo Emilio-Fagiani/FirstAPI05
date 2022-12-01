@@ -10,4 +10,20 @@ public class CarDTO {
     private String modelName;
     private double price;
 
+    @Override
+    public String toString() {
+        return "CarDTO{" +
+                "id='" + id + '\'' +
+                ", modelName='" + modelName + '\'' +
+                ", price=" + price +
+                '}';
+    }
+
+    public CarDTO(String id, String modelName, double price) {
+        this.id = id;
+        this.modelName = modelName;
+        this.price = price;
+
+
+    }
 }
